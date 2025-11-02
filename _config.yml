@@ -29,4 +29,4 @@ defaults:
       path: ""
       type: "essays"
     values:
-      layout: "essay"
+      layout: default
