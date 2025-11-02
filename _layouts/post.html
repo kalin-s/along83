@@ -1,0 +1,9 @@
+---
+---
+<article class="post">
+  <h2>{{ page.title }}</h2>
+  <p class="post-meta">{{ page.date | date: "%B %-e, %Y" }}{% if page.tags %} · {{ page.tags | array_to_sentence_string }}{% endif %}</p>
+
+  {{ content }}
+
+</article>
