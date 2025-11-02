@@ -1,0 +1,67 @@
+:root{
+  --bg: #1f1f1f;
+  --text: #e6e6e6;
+  --muted: #9b9b9b;
+  --accent: #b66b3a;
+  --max-width: 720px;
+  --mono: ui-monospace, "SF Mono", Menlo, Monaco, "Roboto Mono", monospace;
+}
+
+html,body{
+  height:100%;
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--mono);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:3.2rem auto;
+  padding:0 1rem;
+}
+
+a{ color:var(--accent); text-decoration:none; border-bottom:1px dotted rgba(182,107,58,0.16); }
+
+h1,h2,h3{
+  margin:0 0 .5rem 0;
+  font-weight:600;
+}
+
+.post-meta{
+  color:var(--muted);
+  font-size:.95rem;
+  margin-bottom:1.4rem;
+  letter-spacing: .01em;
+}
+
+.post img{
+  display:block;
+  max-width:100%;
+  margin:1rem 0;
+  filter:grayscale(6%) contrast(.98);
+  opacity:.97;
+  border-radius:2px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+article p{ margin:0 0 1.05rem 0; line-height:1.55; font-size:1rem; }
+
+footer{
+  color:var(--muted);
+  font-size:.9rem;
+  margin-top:4rem;
+  padding-top:1rem;
+  border-top:1px solid rgba(255,255,255,0.03);
+}
+
+/* small & readable code styling for the field-notes aesthetic */
+pre, code {
+  background: rgba(255,255,255,0.02);
+  padding: .12rem .35rem;
+  border-radius:3px;
+  font-family:var(--mono);
+  font-size:.94rem;
+}
