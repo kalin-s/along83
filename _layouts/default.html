@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="{{ site.language | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 | default: site.description }}">
+    {%- seo -%}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><a href="{{ '/' | relative_url }}" style="color:inherit; text-decoration:none">{{ site.title }}</a></h1>
+        <p class="post-meta">{{ site.description }}</p>
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      <footer>
+        <p>Field notes from a theoretically hireable life.</p>
+      </footer>
+    </div>
+  </body>
+</html>
