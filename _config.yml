@@ -1,0 +1,33 @@
+title: "Theoretically Hireable"
+description: "Field notes and essays from a working life."
+url: "https://yourusername.github.io"   # replace yourusername
+baseurl: ""                              # leave empty for user.github.io pages
+language: "en"
+
+# permalink style: a dated essay feel
+permalink: /:year/:month/:day/:title/
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
+highlighter: rouge
+
+# Make posts output as standalone pages
+collections:
+  posts:
+    output: true
+
+# Ensure Jekyll includes your assets folder
+include:
+  - assets
+
+# Defaults so you don't need front-matter layout on every post
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
