@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Theoretically Hireable
+title: 31° n, 139° w
 ---
 
 {% for essay in site.essays %}
